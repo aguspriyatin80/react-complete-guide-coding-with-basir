@@ -7,7 +7,7 @@ PART 2: INSTALL TOOLS
 - Eslint
 - JavaScript (ES6) code snippets
 - Prettier - Code formatter
-# chrome browser
+# chrome browser and React Developer Tools (extensions)
 # nodejs
 
 PART 3: HELLO WORLD REACT APP
