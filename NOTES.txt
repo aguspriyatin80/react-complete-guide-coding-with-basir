@@ -1,0 +1,44 @@
+PART 1: INTRODUCTION
+
+PART 2: INSTALL TOOLS
+# vscode with extensions as follows:
+- Bracket Pair Colorizer 2
+- ES7 React/Redux/GraphQL/React-Native snippets
+- Eslint
+- JavaScript (ES6) code snippets
+- Prettier - Code formatter
+# chrome browser
+# nodejs
+
+PART 3: HELLO WORLD REACT APP
+# installation
+- go to your terminal, and type this command:
+npx create-react-app react-basic-app
+- edit file App.js so it will be like this:
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  function formatName(userName){
+    return userName.toUpperCase()
+  }
+  function getGreeting(username){
+    if(username){
+      return <h1>Hello {username}</h1>
+    } else {
+      return <h1>Hello Stranger</h1>
+    }
+  }
+  const name = "Agus"  
+  const logo = '/logo192.png'
+  const image = <img src={logo} alt="logo"/>
+  const element = <div>
+    <h1>Hello {formatName(name)}</h1>
+    <p>Good to see you</p>
+    {image}
+    </div>
+  // return getGreeting('Eka')
+  return element
+}
+
+export default App;
